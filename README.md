@@ -29,7 +29,7 @@ We don't accept saving data being empty or having length exceeding 64 cheracters
 Only port 8383 shall be exposed (NAT) to public IP (to hide mongo port)
 
 ### areas for improvement
-- Stored Values are String, Ideally it shall be string
+- Stored Values are String, Ideally it shall be json
 - Avoid passing Value in arguments.
 - Use Put HTTP call to build progressively data.
 
