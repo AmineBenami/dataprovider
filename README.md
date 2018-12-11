@@ -33,6 +33,6 @@ Only port 8383 shall be exposed (NAT) to public IP (to hide mongo port)
 - Avoid passing Value in arguments.
 - Use Put HTTP call to build progressively data.
 
-### areas for improvement
+### improve-coding-confidence
 - add custom repository class to add more functionalities to the native Mongo Repository or change default behavior
-- extract logic/functional code (implemented in this version inside controller) to Service implementation class.
+- extract logic/functional code (implemented in this version inside controller) to a Service implementation class.
