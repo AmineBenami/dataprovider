@@ -19,7 +19,7 @@ curl -X POST  localhost:8383/v1/key/data/value/provider
 
 ### Example of Call to get Data
 ```
-curl -i -H "Accept: application/json"  -X GET localhost:8383/v1/key/test
+curl -i -H "Accept: application/json"  -X GET localhost:8383/v1/key/data
 ```
 
 ### Security
