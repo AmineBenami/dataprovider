@@ -2,7 +2,7 @@
 DataProvider is a small Service caching and serving data into Key/Value format
 
 
-### To launch compilation compilation and unit tests
+### To launch compilation and unit tests
 ```
 mvn package
 ```
