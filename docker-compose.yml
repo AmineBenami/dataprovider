@@ -1,0 +1,26 @@
+version: '3'
+services:
+  dataprovider:
+    build: .
+    image: dataprovider
+    restart: always
+    container_name: dataprovider_instance
+    ports:
+      - 8383:8080
+    working_dir: /
+    links:
+      - mongo
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: dataprovider-mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+    volumes:
+      - $HOME/data/dataprovider-mongo-data:/data/db
+    command: --wiredTigerCacheSizeGB 0.25 --syncdelay 0 --nojournal
+    restart: always
